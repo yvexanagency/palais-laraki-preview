@@ -36,7 +36,7 @@ const copy = {
     directions: 'Ouvrir l’itinéraire',
     instagram: 'Voir Instagram',
     footerLine: 'Un lieu pour vos moments à partager.',
-    disclaimer: 'Site de démonstration indépendant. Photos publiques de Palais Laraki via Zafaf.ma. Informations, prestations et visuels à valider par l’établissement.',
+    disclaimer: 'Site de démonstration indépendant. Photos publiques de Palais Laraki via Zafaf.ma et Darzawaj.com. Informations, prestations et visuels à valider par l’établissement.',
     skip: 'Aller au contenu',
     menuOpen: 'Ouvrir le menu',
     menuClose: 'Fermer le menu',
@@ -72,7 +72,7 @@ const copy = {
     directions: 'Get directions',
     instagram: 'View Instagram',
     footerLine: 'A place for moments shared.',
-    disclaimer: 'Independent concept website. Public Palais Laraki photos via Zafaf.ma. Details, services and imagery to be confirmed by the venue.',
+    disclaimer: 'Independent concept website. Public Palais Laraki photos via Zafaf.ma and Darzawaj.com. Details, services and imagery to be confirmed by the venue.',
     skip: 'Skip to content',
     menuOpen: 'Open menu',
     menuClose: 'Close menu',
@@ -108,7 +108,7 @@ const copy = {
     directions: 'افتحوا الاتجاهات',
     instagram: 'شاهدوا إنستغرام',
     footerLine: 'مكان للحظات التي تجمعكم.',
-    disclaimer: 'موقع تجريبي مستقل. صور عامة لقصر العراقي عبر Zafaf.ma. التفاصيل والخدمات والصور تحتاج إلى تأكيد من المؤسسة.',
+    disclaimer: 'موقع تجريبي مستقل. صور عامة لقصر العراقي عبر Zafaf.ma وDarzawaj.com. التفاصيل والخدمات والصور تحتاج إلى تأكيد من المؤسسة.',
     skip: 'الانتقال إلى المحتوى',
     menuOpen: 'فتح القائمة',
     menuClose: 'إغلاق القائمة',
@@ -149,7 +149,7 @@ function render() {
           <div class="hero-copy-inner"><p class="hero-kicker">${t.kicker}</p><h1 id="hero-title">${t.title}</h1><p class="hero-desc">${t.heroBody}</p><div class="hero-links"><a class="button button-gold" href="${WHATSAPP}" target="_blank" rel="noopener noreferrer">${t.askQuote}<span aria-hidden="true">↗</span></a><a class="text-link" href="#lieu">${t.discover}<span aria-hidden="true">↓</span></a></div></div>
           <p class="hero-bottom">${t.quote}</p>
         </div>
-        <div class="hero-photo"><img src="./images/entrance.jpg" alt="${photos[0][1]}" fetchpriority="high"><span class="photo-stamp" aria-hidden="true">PL</span></div>
+        <div class="hero-photo"><img src="./images/hall.jpg" alt="Grande salle de réception du Palais Laraki" fetchpriority="high"><span class="photo-stamp" aria-hidden="true">PL</span></div>
       </section>
       <section class="intro section" id="lieu"><div class="intro-image reveal"><img src="./images/ceremony.jpg" alt="${photos[1][1]}" loading="lazy"></div><div class="intro-copy reveal"><p class="section-label">${t.aboutLabel}</p><h2>${t.aboutTitle}</h2><p>${t.aboutBody}</p><a class="under-link" href="#galerie">${t.aboutLink}<span aria-hidden="true">↗</span></a></div></section>
       <section class="occasions section" id="occasions"><div class="occasion-head reveal"><h2>${t.occasionTitle}</h2><p>${t.occasionIntro}</p></div><div class="occasion-list">${t.occasions.map(([title, body], i) => `<article class="occasion reveal"><span class="occasion-num">0${i+1}</span><h3>${title}</h3><p>${body}</p><a href="${WHATSAPP}" target="_blank" rel="noopener noreferrer" aria-label="${t.contact}: ${title}"><span aria-hidden="true">↗</span></a></article>`).join('')}</div></section>
